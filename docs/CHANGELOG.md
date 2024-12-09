@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/compare/v1.0.3...v1.0.4) (2024-12-09)
+
+
+### Bug Fixes
+
+* change registry URL ([6cb5d70](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/commit/6cb5d703fd9633b61303360283ea1183fa9569dc))
+
 ## [1.0.3](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/compare/v1.0.2...v1.0.3) (2024-12-09)
 
 
