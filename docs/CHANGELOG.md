@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/xoanmm/python-app-masterclass/compare/v1.0.10...v1.0.11) (2024-12-09)
+
+
+### Bug Fixes
+
+* add correct registry URL ([5b4271c](https://github.com/xoanmm/python-app-masterclass/commit/5b4271cff8242103ed017086bb75ee182d0a6ade))
+
 ## [1.0.10](https://github.com/xoanmm/python-app-masterclass/compare/v1.0.9...v1.0.10) (2024-12-09)
 
 
