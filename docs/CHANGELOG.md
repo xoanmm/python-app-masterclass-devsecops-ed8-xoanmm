@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/compare/v1.0.2...v1.0.3) (2024-12-09)
+
+
+### Bug Fixes
+
+* change repository name to build and push ([bdd5405](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/commit/bdd5405e2c52d3e55a37a7cb6894dd2057f7b20e))
+
 ## [1.0.2](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/compare/v1.0.1...v1.0.2) (2024-12-09)
 
 
