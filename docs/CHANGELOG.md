@@ -1,3 +1,10 @@
+## [1.0.13](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.12...v1.0.13) (2024-12-09)
+
+
+### Bug Fixes
+
+* add step to publish SBOM ([fc1cdea](https://github.com/xoanmm/python-app-devsecops/commit/fc1cdea9449483cab7978f2ff7146929669f86da))
+
 ## [1.0.12](https://github.com/xoanmm/python-app-masterclass/compare/v1.0.11...v1.0.12) (2024-12-09)
 
 
