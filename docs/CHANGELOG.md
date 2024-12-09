@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/xoanmm/python-app-masterclass/compare/v1.0.11...v1.0.12) (2024-12-09)
+
+
+### Bug Fixes
+
+* add correct registry URL for docker pull ([7a76ca6](https://github.com/xoanmm/python-app-masterclass/commit/7a76ca6433a192c6e126e7d3d83126597cc7e01b))
+
 ## [1.0.11](https://github.com/xoanmm/python-app-masterclass/compare/v1.0.10...v1.0.11) (2024-12-09)
 
 
