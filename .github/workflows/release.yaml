@@ -76,7 +76,7 @@ jobs:
         if: ${{ env.VERSION != '' }}
         with:
           images: |
-            ghcr.io/${{ env.REPO_NAME }}
+            ghcr.io/${{ github.repository }}
           tags: |
             type=semver,pattern={{version}},value=${{ env.VERSION }}
 
@@ -92,7 +92,7 @@ jobs:
       - name: Sign Container Image
         if: ${{ env.VERSION != '' }}
         run: |
-          cosign sign --key env://COSIGN_PRIVATE_KEY ghcr.io/${{ env.REPO_NAME }}:${{ env.VERSION }}
+          cosign sign --key env://COSIGN_PRIVATE_KEY ghcr.io/${{ github.repository }}:${{ env.VERSION }}
         shell: bash
         env:
           COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
@@ -101,16 +101,16 @@ jobs:
       - name: Check images
         if: ${{ env.VERSION != '' }}
         run: |
-          docker buildx imagetools inspect ghcr.io/${{ env.REPO_NAME }}:${{ env.VERSION }}
+          docker buildx imagetools inspect ghcr.io/${{ github.repository }}:${{ env.VERSION }}
           docker pull ghcr.io/${{ env.REPO_NAME }}:${{ env.VERSION }}
-          cosign verify --key env://COSIGN_PUBLIC_KEY ghcr.io/${{ env.REPO_NAME }}:${{ env.VERSION }}
+          cosign verify --key env://COSIGN_PUBLIC_KEY ghcr.io/${{ github.repository }}:${{ env.VERSION }}
         env:
           COSIGN_PUBLIC_KEY: ${{ secrets.COSIGN_PUBLIC_KEY }}
 
       - uses: anchore/sbom-action@v0
         if: ${{ env.VERSION != '' }}
         with:
-          image: ghcr.io/${{ env.REPO_NAME }}:${{ env.VERSION }}
+          image: ghcr.io/${{ github.repository }}:${{ env.VERSION }}
 
     outputs:
       version: ${{ env.VERSION }}
