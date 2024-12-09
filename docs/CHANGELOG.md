@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/compare/v1.0.1...v1.0.2) (2024-12-09)
+
+
+### Bug Fixes
+
+* update configure-login-ghcr ([5fe078a](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/commit/5fe078aa45e82b571e7f50158481fee13a4839e9))
+
 ## [1.0.1](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/compare/v1.0.0...v1.0.1) (2024-12-09)
 
 
