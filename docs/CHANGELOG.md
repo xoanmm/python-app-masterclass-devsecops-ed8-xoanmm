@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/compare/v1.0.5...v1.0.6) (2024-12-09)
+
+
+### Bug Fixes
+
+* change permissions ([ab4320b](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/commit/ab4320be9236a6e2bd5d7b7561466e4bb0015b20))
+
 ## [1.0.5](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/compare/v1.0.4...v1.0.5) (2024-12-09)
 
 
