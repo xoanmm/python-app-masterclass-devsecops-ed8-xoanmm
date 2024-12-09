@@ -54,6 +54,10 @@ jobs:
           echo "VERSION=$(cat semantic_release_version.txt)" >> $GITHUB_ENV
           echo "REPO_NAME=$(basename ${{ github.repository }})" >> $GITHUB_ENV
 
+      - name: Set up QEMU
+        if: ${{ env.VERSION != '' }}
+        uses: docker/setup-qemu-action@v3
+
       - name: Set up Docker Buildx
         if: ${{ env.VERSION != '' }}
         uses: docker/setup-buildx-action@v3.7.1
