@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/xoanmm/python-app-masterclass/compare/v1.0.8...v1.0.9) (2024-12-09)
+
+
+### Bug Fixes
+
+* change way of sign images ([8a33d37](https://github.com/xoanmm/python-app-masterclass/commit/8a33d373204525c73a6ddc939e55d9b433189701))
+
 ## [1.0.8](https://github.com/xoanmm/python-app-masterclass/compare/v1.0.7...v1.0.8) (2024-12-09)
 
 
