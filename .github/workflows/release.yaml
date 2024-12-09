@@ -90,6 +90,10 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
+      - name: Set up cosign
+        if: ${{ env.VERSION != '' }}
+        uses: sigstore/cosign-installer@v3
+
       - name: Sign Container Image
         if: ${{ env.VERSION != '' }}
         run: |
