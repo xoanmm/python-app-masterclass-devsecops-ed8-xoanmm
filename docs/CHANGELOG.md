@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/compare/v1.0.4...v1.0.5) (2024-12-09)
+
+
+### Bug Fixes
+
+* add necessary github action for QEMU ([ef6ddb0](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/commit/ef6ddb0faaa5ea953f63f28f114553b062e0234e))
+
 ## [1.0.4](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/compare/v1.0.3...v1.0.4) (2024-12-09)
 
 
