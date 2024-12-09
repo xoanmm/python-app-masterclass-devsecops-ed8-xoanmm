@@ -13,8 +13,6 @@ permissions:
   packages: write
   pull-requests: read
   issues: write
-  attestations: write
-  id-token: write
 
 jobs:
   semantic-release:
