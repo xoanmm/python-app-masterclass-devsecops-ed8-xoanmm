@@ -85,5 +85,28 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
+      - name: Sign Container Image
+        if: ${{ env.VERSION != '' }}
+        run: |
+            cosign sign --key env://COSIGN_PRIVATE_KEY ghcr.io/${{ github.repository }}:${{ env.VERSION }}
+        shell: bash
+        env:
+          COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
+          COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
+
+      - name: Check images
+        if: ${{ env.VERSION != '' }}
+        run: |
+          docker buildx imagetools inspect ghcr.io/${{ github.repository }}:${{ env.VERSION }}
+          docker pull ghcr.io/${{ github.repository }}:${{ env.VERSION }}
+          cosign verify --key env://COSIGN_PUBLIC_KEY ghcr.io/${{ github.repository }}:${{ env.VERSION }}
+        env:
+          COSIGN_PUBLIC_KEY: ${{ secrets.COSIGN_PUBLIC_KEY }}
+
+      - uses: anchore/sbom-action@v0
+        if: ${{ env.VERSION != '' }}
+        with:
+          image: ghcr.io/${{ github.repository }}:${{ env.VERSION }}
+
     outputs:
       version: ${{ env.VERSION }}
