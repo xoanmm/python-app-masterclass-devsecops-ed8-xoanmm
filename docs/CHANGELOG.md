@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/xoanmm/python-app-masterclass/compare/v1.0.6...v1.0.7) (2024-12-09)
+
+
+### Bug Fixes
+
+* delete unnecesary variable ([d266350](https://github.com/xoanmm/python-app-masterclass/commit/d266350c104cdfd5952c09de5f2ba9c1c5bbbb4a))
+
 ## [1.0.6](https://github.com/xoanmm/python-app-masterclass-devsecops-ed8-xoanmm/compare/v1.0.5...v1.0.6) (2024-12-09)
 
 
