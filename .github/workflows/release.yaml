@@ -13,6 +13,8 @@ permissions:
   packages: write
   pull-requests: read
   issues: write
+  id-token: write
+  attestations: write
 
 jobs:
   semantic-release:
@@ -98,7 +100,7 @@ jobs:
       - name: Sign Container Image
         if: ${{ env.VERSION != '' }}
         run: |
-          cosign sign --key env://COSIGN_PRIVATE_KEY ghcr.io/${{ github.repository }}:${{ steps.meta.build-push.digest }}
+          cosign sign --key env://COSIGN_PRIVATE_KEY ghcr.io/${{ github.repository }}:${{ env.VERSION }} -y
         shell: bash
         env:
           COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
