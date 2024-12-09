@@ -110,7 +110,7 @@ jobs:
         if: ${{ env.VERSION != '' }}
         run: |
           docker buildx imagetools inspect ghcr.io/${{ github.repository }}:${{ env.VERSION }}
-          docker pull ghcr.io/${{ env.REPO_NAME }}:${{ env.VERSION }}
+          docker pull ${{ github.repository }}:${{ env.VERSION }}
           cosign verify --key env://COSIGN_PUBLIC_KEY ghcr.io/${{ github.repository }}:${{ env.VERSION }}
         env:
           COSIGN_PUBLIC_KEY: ${{ secrets.COSIGN_PUBLIC_KEY }}
