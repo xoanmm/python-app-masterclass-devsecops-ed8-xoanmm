@@ -83,6 +83,7 @@ jobs:
 
       - name: Build and push
         uses: docker/build-push-action@v6.10.0
+        id: build-push
         if: ${{ env.VERSION != '' }}
         with:
           context: .
@@ -97,7 +98,7 @@ jobs:
       - name: Sign Container Image
         if: ${{ env.VERSION != '' }}
         run: |
-          cosign sign --key env://COSIGN_PRIVATE_KEY ghcr.io/${{ github.repository }}:${{ env.VERSION }}
+          cosign sign --key env://COSIGN_PRIVATE_KEY ghcr.io/${{ github.repository }}:${{ steps.meta.build-push.digest }}
         shell: bash
         env:
           COSIGN_PRIVATE_KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
