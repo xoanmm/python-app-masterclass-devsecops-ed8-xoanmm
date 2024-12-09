@@ -50,7 +50,6 @@ jobs:
         id: get_version
         run: |
           echo "VERSION=$(cat semantic_release_version.txt)" >> $GITHUB_ENV
-          echo "REPO_NAME=$(basename ${{ github.repository }})" >> $GITHUB_ENV
 
       - name: Set up QEMU
         if: ${{ env.VERSION != '' }}
