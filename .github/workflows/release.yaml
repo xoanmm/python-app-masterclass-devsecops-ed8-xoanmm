@@ -120,6 +120,7 @@ jobs:
         if: ${{ env.VERSION != '' }}
         with:
           image: ghcr.io/${{ github.repository }}:${{ env.VERSION }}
+          output-file: ${{ github.repository }}.spdx.json
 
       - uses: anchore/sbom-action/publish-sbom@v0
         if: ${{ env.VERSION != '' }}
