@@ -1,3 +1,10 @@
+## [1.0.24](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.23...v1.0.24) (2024-12-10)
+
+
+### Bug Fixes
+
+* add correct argument ([17c12b1](https://github.com/xoanmm/python-app-devsecops/commit/17c12b15abd4abc978580e0a03122f4314843274))
+
 ## [1.0.23](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.22...v1.0.23) (2024-12-10)
 
 
