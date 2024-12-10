@@ -93,6 +93,15 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
+      - name: Attest
+        uses: actions/attest-build-provenance@v2
+        id: attest
+        if: ${{ env.VERSION != '' }}
+        with:
+          subject-name: ghcr.io/${{ github.repository }}
+          subject-digest: ${{ steps.build-push.outputs.digest }}
+          push-to-registry: true
+
       - name: Set up cosign
         if: ${{ env.VERSION != '' }}
         uses: sigstore/cosign-installer@v3
