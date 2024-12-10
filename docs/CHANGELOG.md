@@ -1,3 +1,10 @@
+## [1.0.21](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.20...v1.0.21) (2024-12-10)
+
+
+### Bug Fixes
+
+* add command for debug ([aa29280](https://github.com/xoanmm/python-app-devsecops/commit/aa29280d09da5ead0af41934b54dea3f0f854472))
+
 ## [1.0.20](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.19...v1.0.20) (2024-12-10)
 
 
