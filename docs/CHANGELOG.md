@@ -1,3 +1,10 @@
+## [1.0.15](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.14...v1.0.15) (2024-12-10)
+
+
+### Bug Fixes
+
+* add id for create-sbom action step ([d5b56f8](https://github.com/xoanmm/python-app-devsecops/commit/d5b56f8ffd4f8231ec8c00a544828bd11b33e3bd))
+
 ## [1.0.14](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.13...v1.0.14) (2024-12-10)
 
 
