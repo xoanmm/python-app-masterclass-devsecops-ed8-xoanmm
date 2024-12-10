@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.13...v1.0.14) (2024-12-10)
+
+
+### Bug Fixes
+
+* delete sbom-artifact-match ([2c5a441](https://github.com/xoanmm/python-app-devsecops/commit/2c5a441bada665292aa88ce45cdd689489c488f6))
+
 ## [1.0.13](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.12...v1.0.13) (2024-12-09)
 
 
