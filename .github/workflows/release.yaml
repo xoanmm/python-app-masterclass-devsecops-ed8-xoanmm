@@ -117,7 +117,7 @@ jobs:
 
       - id: create-sbom-file
         run: |
-          SBOM_OUTPUT_FILE="${{ github.repository }}.json"
+          SBOM_OUTPUT_FILE="${{ github.repository }}.spdx.json"
           SBOM_OUTPUT_FILE=${SBOM_OUTPUT_FILE//\//-}
           echo SBOM_OUTPUT_FILE=${SBOM_OUTPUT_FILE} >> $GITHUB_ENV
 
