@@ -137,6 +137,10 @@ jobs:
           image: ghcr.io/${{ github.repository }}:${{ env.VERSION }}
           output-file: ${{ env.SBOM_OUTPUT_FILE }}
 
+      - name: Check files
+        run: |
+          ls -lha
+
       - uses: anchore/sbom-action/publish-sbom@v0
         if: ${{ env.VERSION != '' }}
 
