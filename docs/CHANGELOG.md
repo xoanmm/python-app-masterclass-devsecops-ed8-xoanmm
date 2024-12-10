@@ -1,3 +1,10 @@
+## [1.0.17](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.16...v1.0.17) (2024-12-10)
+
+
+### Bug Fixes
+
+* change SBOM output file ([752f96f](https://github.com/xoanmm/python-app-devsecops/commit/752f96fc40dff9e7aa714282cafeb8e1c71322d4))
+
 ## [1.0.16](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.15...v1.0.16) (2024-12-10)
 
 
