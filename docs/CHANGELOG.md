@@ -1,3 +1,11 @@
+## [1.0.23](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.22...v1.0.23) (2024-12-10)
+
+
+### Bug Fixes
+
+* change way publish artifact ([5201e35](https://github.com/xoanmm/python-app-devsecops/commit/5201e35570cb2578ea50065619a9e29b43f479ee))
+* correct files identation ([3463722](https://github.com/xoanmm/python-app-devsecops/commit/346372227a11862622a38cc46c0ef45702d23b7d))
+
 ## [1.0.22](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.21...v1.0.22) (2024-12-10)
 
 
