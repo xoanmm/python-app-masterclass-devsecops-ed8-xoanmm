@@ -153,7 +153,7 @@ jobs:
         with:
           files: ${{ env.SBOM_OUTPUT_FILE }}
           name: v${{ env.VERSION }}
-          tag: v${{ env.VERSION }}
+          tag_name: v${{ env.VERSION }}
 
     outputs:
       version: ${{ env.VERSION }}
