@@ -122,8 +122,6 @@ jobs:
 
       - uses: anchore/sbom-action/publish-sbom@v0
         if: ${{ env.VERSION != '' }}
-        with:
-          sbom-artifact-match: ".*\\.spdx$"
 
     outputs:
       version: ${{ env.VERSION }}
