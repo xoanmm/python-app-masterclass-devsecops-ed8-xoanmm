@@ -1,3 +1,10 @@
+## [1.0.16](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.15...v1.0.16) (2024-12-10)
+
+
+### Bug Fixes
+
+* add output-file configuration in sbom action ([a59d3f6](https://github.com/xoanmm/python-app-devsecops/commit/a59d3f6d6d384c0a16f5c14a196cee4de3846af9))
+
 ## [1.0.15](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.14...v1.0.15) (2024-12-10)
 
 
