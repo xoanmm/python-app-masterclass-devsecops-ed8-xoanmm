@@ -128,10 +128,6 @@ jobs:
           image: ghcr.io/${{ github.repository }}:${{ env.VERSION }}
           output-file: ${{ env.SBOM_OUTPUT_FILE }}
 
-      - name: Check files
-        run: |
-          ls -lha
-
       - name: Attest
         uses: actions/attest-sbom@v2
         id: attest
