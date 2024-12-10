@@ -115,18 +115,18 @@ jobs:
         env:
           COSIGN_PUBLIC_KEY: ${{ secrets.COSIGN_PUBLIC_KEY }}
 
-      - uses: bluwy/substitute-string-action@v3
-        id: sbom-output-file-name
-        with:
-          _input-text: ${{ github.repository }}.spdx.json
-          /: '-'
+      - id: create-sbom-file
+        run: |
+          SBOM_OUTPUT_FILE="${{ github.repository }}.json"
+          SBOM_OUTPUT_FILE=${SBOM_OUTPUT_FILE//\//-}
+          echo SBOM_OUTPUT_FILE=${SBOM_OUTPUT_FILE} >> $GITHUB_ENV
 
       - uses: anchore/sbom-action@v0
         id: create-sbom
         if: ${{ env.VERSION != '' }}
         with:
           image: ghcr.io/${{ github.repository }}:${{ env.VERSION }}
-          output-file: ${{ steps.sbom-output-file-name.outputs.result }}
+          output-file: ${{ env.SBOM_OUTPUT_FILE }}
 
       - uses: anchore/sbom-action/publish-sbom@v0
         if: ${{ env.VERSION != '' }}
