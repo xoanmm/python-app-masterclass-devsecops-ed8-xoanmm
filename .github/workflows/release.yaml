@@ -116,6 +116,7 @@ jobs:
           COSIGN_PUBLIC_KEY: ${{ secrets.COSIGN_PUBLIC_KEY }}
 
       - uses: anchore/sbom-action@v0
+        id: create-sbom
         if: ${{ env.VERSION != '' }}
         with:
           image: ghcr.io/${{ github.repository }}:${{ env.VERSION }}
