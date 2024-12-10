@@ -1,3 +1,10 @@
+## [1.0.25](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.24...v1.0.25) (2024-12-10)
+
+
+### Bug Fixes
+
+* remove unnecessary step ([4ff6111](https://github.com/xoanmm/python-app-devsecops/commit/4ff61119d2c53d15041be813fad140a5721ad9ff))
+
 ## [1.0.24](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.23...v1.0.24) (2024-12-10)
 
 
