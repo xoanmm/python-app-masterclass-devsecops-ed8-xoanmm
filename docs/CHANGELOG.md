@@ -1,3 +1,10 @@
+## [1.0.20](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.19...v1.0.20) (2024-12-10)
+
+
+### Bug Fixes
+
+* add step to build attestation ([1023d1e](https://github.com/xoanmm/python-app-devsecops/commit/1023d1eed3dd6966cc632f458c000ae3bb96eb95))
+
 ## [1.0.19](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.18...v1.0.19) (2024-12-10)
 
 
