@@ -1,3 +1,10 @@
+## [1.0.22](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.21...v1.0.22) (2024-12-10)
+
+
+### Bug Fixes
+
+* change commands order for attestation ([9e51a0c](https://github.com/xoanmm/python-app-devsecops/commit/9e51a0c413e1f437e7cabe2614ea59b08e9699c3))
+
 ## [1.0.21](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.20...v1.0.21) (2024-12-10)
 
 
