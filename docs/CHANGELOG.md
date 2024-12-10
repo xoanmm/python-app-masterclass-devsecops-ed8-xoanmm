@@ -1,3 +1,10 @@
+## [1.0.19](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.18...v1.0.19) (2024-12-10)
+
+
+### Bug Fixes
+
+* change expression generate output file SBOM ([b948b18](https://github.com/xoanmm/python-app-devsecops/commit/b948b18d26858c6919a7ef85f111b40ac6b9545c))
+
 ## [1.0.18](https://github.com/xoanmm/python-app-devsecops/compare/v1.0.17...v1.0.18) (2024-12-10)
 
 
